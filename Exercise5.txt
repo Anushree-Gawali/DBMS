@@ -1,0 +1,67 @@
+NAME-Anushree Gawali
+ROLL NO-200240520020
+
+			EXERCISE -5
+
+
+1
+select sname,qty
+from s,spj
+where s.`s#`=spj.`s#`;
+
+2
+select pname,qty
+from p,spj
+where p.`p#`=spj.`p#`;
+
+3
+select jname,qty
+from j,spj
+where j.`j#`=spj.`j#`;
+
+4
+select sname,pname,jname,qty
+from s,p,j,spj
+where p.`p#`=spj.`p#` 
+and  s.`s#`=spj.`s#` 
+and j.`j#`=spj.`j#`;
+
+5
+select pname,jname,s.city 
+from s,p,j,spj 
+where s.city=j.city 
+and spj.`J#`=j.`J#` 
+and s.`S#`=spj.`S#` 
+and p.`P#`= spj.`P#` ; 
+
+6
+select pname,qty
+from p,spj
+where color='red'
+and p.`p#`=spj.`p#`;
+
+7
+select qty
+from s,spj
+where status=20
+and s.`s#`=spj.`s#`;
+
+8
+select pname,qty
+ from p,spj
+ where weight>14
+ and p.`p#`=spj.`p#`;
+ 
+9
+ select jname,city
+ from j,spj
+ where qty>500
+ and j.`j#`=spj.`j#`;
+ 
+10
+ 
+select pname,qty
+ from p,spj
+ where weight<15
+ and p.`p#`=spj.`p#`;
+ 
